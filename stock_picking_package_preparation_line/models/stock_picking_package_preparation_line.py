@@ -75,7 +75,7 @@ class StockPickingPackagePreparationLine(models.Model):
                         'move_id': move_line.id,
                         'name': move_line.move_id.name,
                         'product_id': move_line.product_id.id,
-                        'product_uom_qty': move_line.product_uom_qty,
+                        'product_uom_qty': move_line.qty_done,
                         'product_uom_id': move_line.product_uom_id.id,
                         'lot_id': move_line.lot_id.id
                         })
